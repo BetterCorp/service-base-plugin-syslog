@@ -10,7 +10,7 @@ module.exports.init = (features: PluginFeature) => {
     features.log.info(value.protocol); // the version of the IP protocol ("IPv4" or "IPv6")
     features.log.info(value.message);  // the syslog message
 
-    features.emitEvent('message', false, {
+    features.emitEvent(null, 'message', {
       gatewayTime: new Date().getTime(),
       date: new Date(value.date).getTime(),
       host: value.host,

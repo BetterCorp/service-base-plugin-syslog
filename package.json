@@ -16,10 +16,10 @@
     "installer.js"
   ],
   "main": "lib/index.js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "dependencies": {
-    "@bettercorp/service-base": "^1.2.0",
-    "@bettercorp/tools": "^1.0.4",
+    "@bettercorp/service-base": "^2.0.7",
+    "@bettercorp/tools": "^1.0.5",
     "@types/node": "^14.11.2",
     "syslog-server": "^1.0.1"
   },
