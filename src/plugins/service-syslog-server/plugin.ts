@@ -3,10 +3,10 @@ import { CPlugin, CPluginClient } from "@bettercorp/service-base/lib/ILib";
 import { MyPluginConfig, SyslogMessage } from './sec.config';
 
 export class syslog extends CPluginClient<any> {
-  public readonly _pluginName: string = "syslog";
+  public readonly _pluginName: string = "syslog-server";
 
   async onMessage(listener: (data: SyslogMessage) => void): Promise<void> {
-    this.refPlugin.onEvent(await this.pluginName(), "message", listener);
+    this.onEvent("message", listener);
   }
 }
 
